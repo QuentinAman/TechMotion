@@ -1,5 +1,5 @@
 <?php session_start();
-$bdd = new PDO('mysql:host=localhost;dbname=id8487019_techmotion;charset=utf8', 'id8487019_quentinaman', 'chouchou');
+$bdd = new PDO('mysql:host=localhost;dbname=article;charset=utf8', 'root', '');
 if(isset($_GET['idSujet']) || isset($_POST['idSujet'])){
     $forum = "sujet";
     if(isset($_GET['idSujet'])) {
