@@ -1,5 +1,5 @@
 <?php session_start();
-$bdd = new PDO('mysql:host=localhost;dbname=id8487019_techmotion;charset=utf8', 'id8487019_quentinaman', 'chouchou');
+$bdd = new PDO('mysql:host=localhost;dbname=article;charset=utf8', 'root', '');
 if(isset($_POST['nomArticle'])) {
     $reponse = $bdd -> query("SELECT id FROM articles ORDER BY id DESC");
     $donnees = $reponse-> fetch();
