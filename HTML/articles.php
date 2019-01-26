@@ -17,7 +17,7 @@ else {
 <body>
     <?php include("statut.php");
 	include("header.php");
-	$bdd = new PDO('mysql:host=localhost;dbname=id8487019_techmotion;charset=utf8', 'id8487019_quentinaman', 'chouchou');
+	$bdd = new PDO('mysql:host=localhost;dbname=article;charset=utf8', 'root', '');
 	if (isset($_GET['id']) && intval($_GET['id']) == $_GET['id']) {
 		$reponse = $bdd->prepare('SELECT * FROM articles WHERE id = ?');
 		$reponse->execute(array( $_GET['id'])); // TODO: vérifier que $_GET['id'] existe (isset - et éventuellement est numérique - filter_var)
