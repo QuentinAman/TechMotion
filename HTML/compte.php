@@ -7,7 +7,7 @@ elseif(isset($_GET['choixCompte']) && $_GET['choixCompte'] == 1) {
 } else {
 	$_SESSION['choixCompte'] = 0;
 }
-$bdd = new PDO('mysql:host=localhost;dbname=id8487019_techmotion;charset=utf8', 'id8487019_quentinaman', 'chouchou');
+$bdd = new PDO('mysql:host=localhost;dbname=article;charset=utf8', 'root', '');
 $reponse = $bdd -> query('SELECT * FROM compte');
 if (isset($_POST['mail']) && isset($_POST['pseudo']) && isset($_POST['motDePasse']) && $_POST['connexion'] == 0) {
 	$dejaUtilise = false;
